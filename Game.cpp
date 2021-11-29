@@ -6,7 +6,7 @@ void Game::printMatrix() {
 		for (int j = 0; j < 3; j++) {
 			cout << this->matrix[i][j] <<"\t";
 		}
-		cout << endl<<endl;
+		cout <<endl<<endl<<endl;
 	}
 }
 
@@ -60,7 +60,7 @@ bool Game::allCellsFilled() {
                 counter++;
             }
         }
-        }
+    }
         return counter == 0;
 }
 
@@ -85,7 +85,7 @@ char Game::whoWin(){
 }
 
 void Game::play() {
-	cout << "||Player"<<"("<<this->player<<")"<<"|| Enter a position : ";
+	cout << "Player"<<"("<<this->player<<")"<<" Enter a position: ";
 	cin >> Pos;
 
 	for (int i = 0; i < 3; i++) {
